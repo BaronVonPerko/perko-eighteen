@@ -1,0 +1,45 @@
+/*
+ * AWPS uses Laravel Mix
+ *
+ * Check the documentation at
+ * https://laravel.com/docs/5.6/mix
+ */
+
+let mix = require( 'laravel-mix' );
+var tailwindcss = require('tailwindcss');
+
+// BrowserSync and LiveReload on `npm run watch` command
+// Update the `proxy` and the location of your SSL Certificates if you're developing over HTTPS
+mix.browserSync({
+	proxy: 'https://perko.test',
+	https: {
+		key: '/home/cperko/.valet/Certificates/perko.test.key',
+		cert: '/home/cperko/.valet/Certificates/perko.test.crt'
+	},
+	files: [
+		'**/*.php',
+		'assets/dist/css/**/*.css',
+		'assets/dist/js/**/*.js'
+	],
+	injectChanges: true,
+	open: false
+});
+
+// Autloading jQuery to make it accessible to all the packages, because, you know, reasons
+// You can comment this line if you don't need jQuery
+mix.autoload({
+	'jquery': ['jQuery', '$']
+});
+
+// Fix for Windows Environment
+mix.setPublicPath('./');
+
+// Compile assets
+mix.js( 'assets/src/scripts/app.js', 'assets/dist/js' )
+	.js( 'assets/src/scripts/admin.js', 'assets/dist/js' )
+	.react( 'assets/src/scripts/gutenberg.js', 'assets/dist/js' )
+	.sass('assets/src/sass/app.scss', 'assets/dist/css/app.css')
+  .options({
+    processCssUrls: false,
+    postCss: [ tailwindcss('./tailwind.js') ],
+  });
