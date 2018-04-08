@@ -112,13 +112,13 @@ let colors = {
   'indigo-lighter': '#b2b7ff',
   'indigo-lightest': '#e6e8ff',
 
-  'purple-darkest': '#21183c',
-  'purple-darker': '#382b5f',
-  'purple-dark': '#794acf',
-  'purple': '#9561e2',
-  'purple-light': '#a779e9',
-  'purple-lighter': '#d6bbfc',
-  'purple-lightest': '#f3ebff',
+  // 'purple-darkest': '#21183c',
+  // 'purple-darker': '#382b5f',
+  // 'purple-dark': '#794acf',
+  'purple': '#6236B5',
+  // 'purple-light': '#a779e9',
+  // 'purple-lighter': '#d6bbfc',
+  // 'purple-lightest': '#f3ebff',
 
   'pink-darkest': '#451225',
   'pink-darker': '#6f213f',
@@ -650,6 +650,7 @@ module.exports = {
     '4': '1rem',
     '6': '1.5rem',
     '8': '2rem',
+    '16': '4rem',
   },
 
 

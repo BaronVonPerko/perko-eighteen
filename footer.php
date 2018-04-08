@@ -15,7 +15,7 @@
 
 	<?php if ( is_customize_preview() ) echo '<div id="Perko-footer-control" style="margin-top:-30px;position:absolute;"></div>'; ?>
 
-	<footer id="colophon" class="site-footer container-fluid" role="contentinfo">
+	<footer id="colophon" role="contentinfo">
 
 		<div class="site-info">
 			<a <?php if ( is_customize_preview() ) echo 'id="Perko-footer-copy-control"'; ?> href="<?php

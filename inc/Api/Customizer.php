@@ -10,6 +10,7 @@ namespace Perko\Api;
 use Perko\Api\Customizer\Sidebar;
 use Perko\Api\Customizer\Header;
 use Perko\Api\Customizer\Footer;
+use Perko\Api\Customizer\FrontPage;
 
 /**
  * Customizer class
@@ -36,7 +37,8 @@ class Customizer
 		return [
 			Sidebar::class,
 			Footer::class,
-			Header::class
+			Header::class,
+			FrontPage::class,
 		];
 	}
 
