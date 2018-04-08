@@ -1,4 +1,4 @@
-/*! normalize.css v7.0.0 | MIT License | github.com/necolas/normalize.css */
+@import url(https://fonts.googleapis.com/css?family=Open+Sans|Pacifico|Raleway);/*! normalize.css v7.0.0 | MIT License | github.com/necolas/normalize.css */
 
 /* Document
    ========================================================================== */
@@ -2518,7 +2518,7 @@ button,
 }
 
 .font-serif {
-  font-family: Constantia, Lucida Bright, Lucidabright, Lucida Serif, Lucida, DejaVu Serif, Bitstream Vera Serif, Liberation Serif, Georgia, serif;
+  font-family: Open Sans, Constantia, Lucida Bright, Lucidabright, Lucida Serif, Lucida, DejaVu Serif, Bitstream Vera Serif, Liberation Serif, Georgia, serif;
 }
 
 .font-mono {
@@ -4637,6 +4637,26 @@ button,
   z-index: auto;
 }
 
+.font-pacifico {
+  font-family: Pacifico;
+}
+
+.font-open-sans {
+  font-family: 'Open Sans';
+}
+
+.font-raleway {
+  font-family: Raleway;
+}
+
+.l-20 {
+  left: 200px;
+}
+
+.t-20 {
+  top: 200px;
+}
+
 @media (min-width: 576px) {
   .sm\:list-reset {
     list-style: none;
@@ -6494,7 +6514,7 @@ button,
   }
 
   .sm\:font-serif {
-    font-family: Constantia, Lucida Bright, Lucidabright, Lucida Serif, Lucida, DejaVu Serif, Bitstream Vera Serif, Liberation Serif, Georgia, serif;
+    font-family: Open Sans, Constantia, Lucida Bright, Lucidabright, Lucida Serif, Lucida, DejaVu Serif, Bitstream Vera Serif, Liberation Serif, Georgia, serif;
   }
 
   .sm\:font-mono {
@@ -10463,7 +10483,7 @@ button,
   }
 
   .md\:font-serif {
-    font-family: Constantia, Lucida Bright, Lucidabright, Lucida Serif, Lucida, DejaVu Serif, Bitstream Vera Serif, Liberation Serif, Georgia, serif;
+    font-family: Open Sans, Constantia, Lucida Bright, Lucidabright, Lucida Serif, Lucida, DejaVu Serif, Bitstream Vera Serif, Liberation Serif, Georgia, serif;
   }
 
   .md\:font-mono {
@@ -14432,7 +14452,7 @@ button,
   }
 
   .lg\:font-serif {
-    font-family: Constantia, Lucida Bright, Lucidabright, Lucida Serif, Lucida, DejaVu Serif, Bitstream Vera Serif, Liberation Serif, Georgia, serif;
+    font-family: Open Sans, Constantia, Lucida Bright, Lucidabright, Lucida Serif, Lucida, DejaVu Serif, Bitstream Vera Serif, Liberation Serif, Georgia, serif;
   }
 
   .lg\:font-mono {
@@ -18401,7 +18421,7 @@ button,
   }
 
   .xl\:font-serif {
-    font-family: Constantia, Lucida Bright, Lucidabright, Lucida Serif, Lucida, DejaVu Serif, Bitstream Vera Serif, Liberation Serif, Georgia, serif;
+    font-family: Open Sans, Constantia, Lucida Bright, Lucidabright, Lucida Serif, Lucida, DejaVu Serif, Bitstream Vera Serif, Liberation Serif, Georgia, serif;
   }
 
   .xl\:font-mono {
