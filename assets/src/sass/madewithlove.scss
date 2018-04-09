@@ -1,0 +1,80 @@
+#love-wrapper {
+  font-family: Raleway, sans-serif;
+  background-color: black;
+  display: flex;
+  position: relative;
+  justify-content: center;
+  color: white;
+  height: 70vh;
+}
+
+#love-wrapper h1 {
+  align-self: center;
+}
+
+#love-wrapper svg {
+  fill: red;
+  transform: scale(3);
+  animation: pulse 5s infinite linear;
+  cursor: pointer;
+  margin: 0 30px;
+}
+
+@keyframes pulse {
+  0%{ transform: scale(3);}
+  90%{ transform: scale(3); }
+  92%{ transform: scale(3.8); }
+  94%{ transform: scale(3);}
+  96%{ transform: scale(3.8);}
+  100%{ transform: scale(3);}
+}
+
+#love-wrapper svg#hearts {
+  position: absolute;
+  top: 0; left: 0;
+  width: 100%; height: 70vh;
+  pointer-events: none;
+}
+
+#love-wrapper .float-0, #love-wrapper .float-1, #love-wrapper .float-2 {
+  transform: translateX(-200px);
+}
+
+#love-wrapper .float-0 {
+  animation: anim-float-0 4s;
+}
+
+#love-wrapper .float-1 {
+  animation: anim-float-1 4s;
+}
+
+#love-wrapper .float-2 {
+  animation: anim-float-2 4s;
+}
+
+@keyframes anim-float-0 {
+  from {
+    transform: translateX(50%) translateY(100vh);
+  }
+  to {
+    transform: translateX(75%) translateY(-200px);
+  }
+}
+
+@keyframes anim-float-1 {
+  from {
+    transform: translateX(90%) translateY(100vh);
+  }
+  to {
+    transform: translateX(10%) translateY(-200px);
+  }
+}
+
+@keyframes anim-float-2 {
+  from {
+    transform: translateX(5%) translateY(100vh);
+  }
+  to {
+    transform: translateX(85%) translateY(-200px);
+  }
+}

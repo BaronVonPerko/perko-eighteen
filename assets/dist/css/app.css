@@ -4585,6 +4585,202 @@ button,
   max-height: 75vh;
 }
 
+#love-wrapper {
+  font-family: Raleway, sans-serif;
+  background-color: black;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: relative;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  color: white;
+  height: 70vh;
+}
+
+#love-wrapper h1 {
+  -ms-flex-item-align: center;
+      align-self: center;
+}
+
+#love-wrapper svg {
+  fill: red;
+  -webkit-transform: scale(3);
+          transform: scale(3);
+  -webkit-animation: pulse 5s infinite linear;
+          animation: pulse 5s infinite linear;
+  cursor: pointer;
+  margin: 0 30px;
+}
+
+@-webkit-keyframes pulse {
+  0% {
+    -webkit-transform: scale(3);
+            transform: scale(3);
+  }
+
+  90% {
+    -webkit-transform: scale(3);
+            transform: scale(3);
+  }
+
+  92% {
+    -webkit-transform: scale(3.8);
+            transform: scale(3.8);
+  }
+
+  94% {
+    -webkit-transform: scale(3);
+            transform: scale(3);
+  }
+
+  96% {
+    -webkit-transform: scale(3.8);
+            transform: scale(3.8);
+  }
+
+  100% {
+    -webkit-transform: scale(3);
+            transform: scale(3);
+  }
+}
+
+@keyframes pulse {
+  0% {
+    -webkit-transform: scale(3);
+            transform: scale(3);
+  }
+
+  90% {
+    -webkit-transform: scale(3);
+            transform: scale(3);
+  }
+
+  92% {
+    -webkit-transform: scale(3.8);
+            transform: scale(3.8);
+  }
+
+  94% {
+    -webkit-transform: scale(3);
+            transform: scale(3);
+  }
+
+  96% {
+    -webkit-transform: scale(3.8);
+            transform: scale(3.8);
+  }
+
+  100% {
+    -webkit-transform: scale(3);
+            transform: scale(3);
+  }
+}
+
+#love-wrapper svg#hearts {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 70vh;
+  pointer-events: none;
+}
+
+#love-wrapper .float-0,
+#love-wrapper .float-1,
+#love-wrapper .float-2 {
+  -webkit-transform: translateX(-200px);
+          transform: translateX(-200px);
+}
+
+#love-wrapper .float-0 {
+  -webkit-animation: anim-float-0 4s;
+          animation: anim-float-0 4s;
+}
+
+#love-wrapper .float-1 {
+  -webkit-animation: anim-float-1 4s;
+          animation: anim-float-1 4s;
+}
+
+#love-wrapper .float-2 {
+  -webkit-animation: anim-float-2 4s;
+          animation: anim-float-2 4s;
+}
+
+@-webkit-keyframes anim-float-0 {
+  from {
+    -webkit-transform: translateX(50%) translateY(100vh);
+            transform: translateX(50%) translateY(100vh);
+  }
+
+  to {
+    -webkit-transform: translateX(75%) translateY(-200px);
+            transform: translateX(75%) translateY(-200px);
+  }
+}
+
+@keyframes anim-float-0 {
+  from {
+    -webkit-transform: translateX(50%) translateY(100vh);
+            transform: translateX(50%) translateY(100vh);
+  }
+
+  to {
+    -webkit-transform: translateX(75%) translateY(-200px);
+            transform: translateX(75%) translateY(-200px);
+  }
+}
+
+@-webkit-keyframes anim-float-1 {
+  from {
+    -webkit-transform: translateX(90%) translateY(100vh);
+            transform: translateX(90%) translateY(100vh);
+  }
+
+  to {
+    -webkit-transform: translateX(10%) translateY(-200px);
+            transform: translateX(10%) translateY(-200px);
+  }
+}
+
+@keyframes anim-float-1 {
+  from {
+    -webkit-transform: translateX(90%) translateY(100vh);
+            transform: translateX(90%) translateY(100vh);
+  }
+
+  to {
+    -webkit-transform: translateX(10%) translateY(-200px);
+            transform: translateX(10%) translateY(-200px);
+  }
+}
+
+@-webkit-keyframes anim-float-2 {
+  from {
+    -webkit-transform: translateX(5%) translateY(100vh);
+            transform: translateX(5%) translateY(100vh);
+  }
+
+  to {
+    -webkit-transform: translateX(85%) translateY(-200px);
+            transform: translateX(85%) translateY(-200px);
+  }
+}
+
+@keyframes anim-float-2 {
+  from {
+    -webkit-transform: translateX(5%) translateY(100vh);
+            transform: translateX(5%) translateY(100vh);
+  }
+
+  to {
+    -webkit-transform: translateX(85%) translateY(-200px);
+            transform: translateX(85%) translateY(-200px);
+  }
+}
+
 @media (min-width: 576px) {
   .sm\:list-reset {
     list-style: none;
