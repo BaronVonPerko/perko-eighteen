@@ -3,3 +3,20 @@
     max-width: 10rem;
     margin-top: -5rem;
 }
+
+.btn {
+    @apply .mx-auto .text-center .rounded .py-8 .px-2 .cursor-pointer .text-4xl .max-w-xs .shadow-md;
+}
+
+.btn:hover {
+    @apply .shadow-lg;
+}
+
+.btn a {
+    text-decoration: none;
+    color: config('colors.grey-lighter')
+}
+
+.btn-purple {
+    background-color: config('colors.purple')
+}
