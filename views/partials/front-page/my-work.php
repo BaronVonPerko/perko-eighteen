@@ -23,7 +23,7 @@
             alt="">
     </div>
 
-    <div class="btn btn-purple mb-8">
+    <div class="btn btn-purple mb-8 mx-auto">
         <a href="/my-work">View More</a>
     </div>
 </div>

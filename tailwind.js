@@ -120,6 +120,8 @@ let colors = {
   // 'purple-lighter': '#d6bbfc',
   // 'purple-lightest': '#f3ebff',
 
+  'frontpage-blue': '#608EF2',
+
   'pink-darkest': '#451225',
   'pink-darker': '#6f213f',
   'pink-dark': '#eb5286',
@@ -902,7 +904,7 @@ module.exports = {
 
   plugins: [
     require('tailwindcss/plugins/container')({
-      // center: true,
+      center: true,
       // padding: '1rem',
     }),
   ],

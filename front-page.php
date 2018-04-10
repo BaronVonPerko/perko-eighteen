@@ -10,4 +10,6 @@ load_partial('front-page.my-work');
 
 load_partial('front-page.made-with-love');
 
+load_partial('front-page.contact');
+
 get_footer();

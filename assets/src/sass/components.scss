@@ -5,7 +5,7 @@
 }
 
 .btn {
-    @apply .mx-auto .text-center .rounded .py-8 .px-2 .cursor-pointer .text-4xl .max-w-xs .shadow-md;
+    @apply .text-center .rounded .py-8 .px-2 .cursor-pointer .text-4xl .max-w-xs .shadow-md;
 }
 
 .btn:hover {
@@ -17,6 +17,25 @@
     color: config('colors.grey-lighter')
 }
 
+.btn-white {
+    @apply .text-grey-darker .bg-grey-lighter;
+}
+
 .btn-purple {
     background-color: config('colors.purple')
+}
+
+form {
+    .input-row {
+        display: flex;
+        @apply .justify-between .mx-auto .my-8 .max-w-lg;
+    }
+    
+    input, textarea {
+        @apply .py-4 .px-2 .flex-1 .mx-4 .rounded .shadow .leading-normal;
+    }
+
+    .btn {
+        @apply .mx-4 .flex-1;
+    }
 }
