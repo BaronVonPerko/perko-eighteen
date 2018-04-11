@@ -10,14 +10,14 @@
     font-family: Raleway;
 }
 
-.pl-200 {
-    padding-left: 200px;
-}
-
-.pt-200 {
-    padding-top: 200px;
-}
-
 .h-3-4 {
     max-height: 75vh;
+}
+
+.rotate-left {
+    transform: rotate(-90deg);
+}
+
+.top-200 {
+    top: 200px;
 }

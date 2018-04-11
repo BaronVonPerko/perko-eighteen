@@ -706,17 +706,24 @@ button,
 }
 
 form .input-row {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
   margin-left: auto;
   margin-right: auto;
-  margin-top: 2rem;
-  margin-bottom: 2rem;
   max-width: 50rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+@media (max-width: 576px) {
+  form .input-row {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
 }
 
 form input,
@@ -734,6 +741,8 @@ form textarea {
   -webkit-box-shadow: 0 2px 4px 0 rgba(0, 0, 0, .1);
           box-shadow: 0 2px 4px 0 rgba(0, 0, 0, .1);
   line-height: 1.5;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
 }
 
 form .btn {
@@ -742,6 +751,29 @@ form .btn {
   -webkit-box-flex: 1;
       -ms-flex: 1;
           flex: 1;
+}
+
+.blog-link {
+  bottom: 200px;
+  left: -70px;
+}
+
+.hero-heading {
+  padding-top: 100px;
+  padding-left: 2rem;
+}
+
+@media (min-width: 768px) {
+  .hero-heading {
+    padding-top: 200px;
+    padding-left: 200px;
+  }
+}
+
+@media (max-width: 576px) {
+  .hero-heading {
+    font-size: 1.125rem;
+  }
 }
 
 .list-reset {
@@ -4641,16 +4673,17 @@ form .btn {
   font-family: Raleway;
 }
 
-.pl-200 {
-  padding-left: 200px;
-}
-
-.pt-200 {
-  padding-top: 200px;
-}
-
 .h-3-4 {
   max-height: 75vh;
+}
+
+.rotate-left {
+  -webkit-transform: rotate(-90deg);
+          transform: rotate(-90deg);
+}
+
+.top-200 {
+  top: 200px;
 }
 
 #love-wrapper {

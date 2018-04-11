@@ -27,15 +27,37 @@
 
 form {
     .input-row {
-        display: flex;
-        @apply .justify-between .mx-auto .my-8 .max-w-lg;
+        @apply .justify-between .mx-auto .max-w-lg .flex;
+
+        @media(max-width: config('screens.sm'))
+        {
+            @apply .flex-col;
+        }
     }
     
     input, textarea {
-        @apply .py-4 .px-2 .flex-1 .mx-4 .rounded .shadow .leading-normal;
+        @apply .py-4 .px-2 .flex-1 .mx-4 .rounded .shadow .leading-normal .my-4;
     }
 
     .btn {
         @apply .mx-4 .flex-1;
+    }
+}
+
+.blog-link {
+    bottom: 200px; left: -70px;
+}
+
+.hero-heading {
+    padding-top: 100px;
+    @apply .pl-8;
+
+    @media(min-width: config('screens.md')) {
+        padding-top: 200px;
+        padding-left: 200px;
+    }
+
+    @media(max-width: config('screens.sm')) {
+        @apply .text-lg;
     }
 }

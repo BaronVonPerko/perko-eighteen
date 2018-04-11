@@ -15,12 +15,12 @@
 
 	<?php if ( is_customize_preview() ) echo '<div id="Perko-footer-control" style="margin-top:-30px;position:absolute;"></div>'; ?>
 
-	<footer id="colophon" role="contentinfo">
+	<footer id="colophon" role="contentinfo" class="bg-grey-darkest text-center py-16 leading-loose text-grey-lighter">
 
 		<div class="site-info">
 			<a <?php if ( is_customize_preview() ) echo 'id="Perko-footer-copy-control"'; ?> href="<?php
 				/* translators: %s: Github repo URL. */
-				echo esc_url( __( 'https://github.com/Alecaddd/Perko', 'Perko' ) ); ?>"><?php echo Perko\Api\Customizer::text( 'Perko_footer_copy_text' ); ?></a>
+				echo esc_url( __( 'https://github.com/Alecaddd/Awps', 'Perko' ) ); ?>"><?php echo Perko\Api\Customizer::text( 'Perko_footer_copy_text' ); ?></a>
 			<span class="sep"> | </span>
 			<?php
 				/* translators: %1: Theme name. */
