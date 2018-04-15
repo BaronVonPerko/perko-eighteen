@@ -1,3 +1,5 @@
+@import 'components/home';
+
 .profile-img {
     @apply .rounded-full .border-purple .border-8;
     max-width: 10rem;
@@ -41,23 +43,5 @@ form {
 
     .btn {
         @apply .mx-4 .flex-1;
-    }
-}
-
-.blog-link {
-    bottom: 200px; left: -70px;
-}
-
-.hero-heading {
-    padding-top: 100px;
-    @apply .pl-8;
-
-    @media(min-width: config('screens.md')) {
-        padding-top: 200px;
-        padding-left: 200px;
-    }
-
-    @media(max-width: config('screens.sm')) {
-        @apply .text-lg;
     }
 }
