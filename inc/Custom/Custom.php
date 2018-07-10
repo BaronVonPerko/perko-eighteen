@@ -45,7 +45,7 @@ class Custom
 
 		$args = array(
 			'labels'             => $labels,
-			'description'        => __( 'Description.', 'Perko' ),
+			'description'        => __( 'Video posts', 'Perko' ),
 			'public'             => true,
 			'publicly_queryable' => true,
 			'show_ui'            => true,
