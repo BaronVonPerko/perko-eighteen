@@ -23,8 +23,10 @@
 <body <?php body_class(); ?>>
 <div id="page" class="site" <?php echo ! is_customize_preview() ?: 'style="padding: 0 40px;"'; ?>>
 
-    <header>
-        <h1><span>ChrisPerko</span><span>.NET</span></h1>
+    <header class="py-2 px-4 shadow">
+        <h1 class="text-2xl">
+            <span class="text-gray">ChrisPerko</span><span class="text-gray-light font-thin">.NET</span>
+        </h1>
     </header>
 
     <div id="content" class="site-content">
