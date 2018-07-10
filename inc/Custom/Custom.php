@@ -14,15 +14,16 @@ class Custom
      */
 	public function register()
 	{
-		add_action( 'init', array( $this, 'custom_post_type' ) );
+		add_action( 'init', array( $this, 'video_post_type' ) );
+		add_action( 'init', array( $this, 'video_series_taxonomy' ) );
 		add_action( 'after_switch_theme', array( $this, 'rewrite_flush' ) );
 	}
 
 	/**
-	 * Create Custom Post Types
+	 * Create Video Post Types
 	 * @return The registered post type object, or an error object
 	 */
-	public function custom_post_type() 
+	public function video_post_type()
 	{
 		$labels = array(
 			'name'               => _x( 'Videos', 'post type general name', 'Perko' ),
@@ -63,13 +64,26 @@ class Custom
 	}
 
 	/**
+	 * Create the Video Series Taxonomy
+	 */
+	public function video_series_taxonomy() {
+		register_taxonomy(
+			'video_series',
+			'video',
+			array(
+				'label' => 'Series',
+			)
+		);
+	}
+
+	/**
 	 * Flush Rewrite on CPT activation
 	 * @return empty
 	 */
 	public function rewrite_flush() 
 	{   
-		// call the CPT init function
-		$this->custom_post_type();
+		$this->video_post_type();
+		$this->video_series_taxonomy();
 
 		// Flush the rewrite rules only on theme activation
 		flush_rewrite_rules();
