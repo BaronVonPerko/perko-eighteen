@@ -11,7 +11,7 @@ if ( have_posts() ) :
 
 	while ( have_posts() ) :
 		the_post();
-		get_template_part( 'views/content', get_post_format() );
+		get_template_part( 'views/content-blog-snippet', get_post_format() );
 	endwhile;
 
 	the_posts_pagination();
