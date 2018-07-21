@@ -13,7 +13,7 @@ $GLOBALS['wp_query'] = new WP_Query( array(
 
 <?php if ( have_posts() ) : ?>
     <div class="container my-8">
-        <div class="flex flex-wrap justify-center">
+        <div class="flex flex-wrap justify-center flex-col sm:flex-row">
 			<?php
 			while ( have_posts() ) :
 				the_post();
@@ -45,7 +45,7 @@ $GLOBALS['wp_query'] = new WP_Query( array(
 
 <?php if ( have_posts() ) : ?>
     <div class="container my-8">
-        <div class="flex flex-wrap justify-center">
+        <div class="flex flex-wrap justify-center flex-col sm:flex-row">
 			<?php
 			while ( have_posts() ) :
 				the_post();
