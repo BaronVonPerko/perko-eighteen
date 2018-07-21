@@ -17,7 +17,7 @@
     }
 </style>
 
-<a class="w-1/4 h-48 m-8 relative shadow-lg" rel="bookmark" href="<?= esc_url( get_permalink() ) ?>">
+<a class="sm:w-2/5 md:w-1/4 h-48 m-2 sm:m-4 relative shadow-lg" rel="bookmark" href="<?= esc_url( get_permalink() ) ?>">
     <article id="post-<?= the_ID() ?>" <?php post_class(); ?>>
 
         <div class="post-tile-image absolute pin"></div>
