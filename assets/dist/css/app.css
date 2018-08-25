@@ -687,6 +687,13 @@ button,
   }
 }
 
+.blog_page_title {
+  text-align: center;
+  padding-top: 2rem;
+  font-size: 1.5rem;
+  color: #606f7b;
+}
+
 .profile-img {
   border-radius: 9999px;
   border-color: #6236b5;
