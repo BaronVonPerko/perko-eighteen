@@ -56,3 +56,6 @@ $GLOBALS['wp_query'] = new WP_Query( array(
     </div>
 
 <?php endif; ?>
+
+
+<?php get_footer(); ?>

@@ -1,0 +1,6 @@
+assets/dist/css/app.css
+assets/dist/js/app.js
+node_modules/
+vendor/
+npm-debug.log
+mix-manifest.json
