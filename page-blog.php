@@ -12,7 +12,7 @@ $GLOBALS['wp_query'] = new WP_Query( array(
 ?>
 
 <?php if ( have_posts() ) : ?>
-    <div class="container my-8">
+    <div class="container my-8 mx-auto">
         <div class="flex flex-wrap justify-center flex-col sm:flex-row">
 			<?php
 			while ( have_posts() ) :

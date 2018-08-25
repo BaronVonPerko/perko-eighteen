@@ -1,3 +1,26 @@
 .blog_page_title {
   @apply .text-center .pt-8 .text-2xl .text-grey-darker;
 }
+
+.entry-content {
+
+  img {
+    @apply .mx-auto .my-8 .block;
+  }
+
+  figure {
+    @apply .mx-auto;
+  }
+
+  h3 {
+    @apply .mt-16 .mb-8 .text-3xl .text-grey-darkest;
+  }
+
+  p {
+    @apply .leading-loose .mb-8 .text-lg;
+  }
+}
+
+.syntaxhighlighter {
+  @apply .shadow-md .py-4;
+}

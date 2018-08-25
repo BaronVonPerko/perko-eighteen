@@ -12,10 +12,10 @@ var tailwindcss = require('tailwindcss');
 // Update the `proxy` and the location of your SSL Certificates if you're developing over HTTPS
 mix.browserSync({
 	proxy: 'https://perko.test',
-	https: {
-		key: '/home/cperko/.valet/Certificates/perko.test.key',
-		cert: '/home/cperko/.valet/Certificates/perko.test.crt'
-	},
+	// https: {
+	// 	key: '/home/cperko/.valet/Certificates/perko.test.key',
+	// 	cert: '/home/cperko/.valet/Certificates/perko.test.crt'
+	// },
 	files: [
 		'**/*.php',
 		'assets/dist/css/**/*.css',

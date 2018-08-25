@@ -29,4 +29,4 @@
         </h1>
     </header>
 
-    <div id="content" class="site-content mt-8">
+    <div id="content" class="site-content">
