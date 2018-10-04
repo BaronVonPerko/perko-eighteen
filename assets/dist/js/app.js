@@ -10470,17 +10470,30 @@ var carousel = new __WEBPACK_IMPORTED_MODULE_2__modules_carousel_js__["a" /* def
 var love = new __WEBPACK_IMPORTED_MODULE_3__modules_made_with_love_js__["a" /* default */]();
 
 function runLove() {
-    love.run();
+  love.run();
 }
-document.getElementById('text-heart').addEventListener('click', runLove);
+var heart = document.getElementById("text-heart");
+if (heart) heart.addEventListener("click", runLove);
 
-var loveWrapper = document.getElementById('love-wrapper');
-var watch = setInterval(function (_) {
+var loveWrapper = document.getElementById("love-wrapper");
+if (loveWrapper) {
+  var watch = setInterval(function (_) {
     if (loveWrapper.offsetTop < window.pageYOffset + 300) {
-        runLove();
-        clearInterval(watch);
+      runLove();
+      clearInterval(watch);
     }
-}, 200);
+  }, 200);
+}
+
+function toggleMenu() {
+  document.getElementById("menu-overlay").classList.toggle("open");
+  Array.from(document.getElementsByClassName("menu-item")).forEach(function (element) {
+    return element.classList.toggle("open");
+  });
+}
+
+var menuLink = document.getElementById("menu-link");
+if (menuLink) menuLink.addEventListener("click", toggleMenu);
 
 /***/ }),
 /* 3 */

@@ -22,7 +22,12 @@ mix.browserSync({
 		'assets/dist/js/**/*.js'
 	],
 	injectChanges: true,
-	open: false
+	open: false,
+	advanced: {
+		broswerSync: {
+			notify: false,
+		}
+	}
 });
 
 // Autloading jQuery to make it accessible to all the packages, because, you know, reasons
