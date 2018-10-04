@@ -23,10 +23,17 @@
 <body <?php body_class(); ?>>
 <div id="page" class="site" <?php echo ! is_customize_preview() ?: 'style="padding: 0 40px;"'; ?>>
 
-    <header class="py-2 px-4 shadow z-20 bg-white">
+    <header class="py-2 px-4 shadow z-20 bg-white flex justify-between">
         <h1 class="text-2xl">
             <span class="text-gray">ChrisPerko</span><span class="text-gray-light font-thin">.NET</span>
         </h1>
+        <p id="menu-link" class="cursor-pointer">menu</p>
     </header>
+
+    <div id="menu-overlay" class="menu-overlay pt-16">
+        <?php $items = wp_nav_menu([
+            'menu_class' => 'flex content-center justify-between flex-wrap p-0 mt-32 container mx-auto'
+        ]); ?>
+    </div>
 
     <div id="content" class="site-content">
