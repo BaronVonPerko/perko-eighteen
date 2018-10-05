@@ -22,7 +22,7 @@
 
 <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
     <header class="entry-header">
-        <div class="overlay py-32 text-center text-white">
+        <div class="overlay py-64 text-center text-white">
         <?php
         if (is_single()) :
             the_title('<h1 class="entry-title">', '</h1>');
@@ -33,7 +33,7 @@
         </div>
     </header><!-- .entry-header -->
 
-    <div class="entry-content container mx-auto max-w-xl shadow-lg p-4 mb-32 -mt-8 bg-grey-lightest rounded">
+    <div class="entry-content container mx-auto max-w-xl shadow-lg p-4 mb-32 -mt-16 bg-grey-lightest rounded">
         <?php
         the_content(sprintf(
         /* translators: %s: Name of current post. */

@@ -25,7 +25,8 @@
 
     <header class="py-2 px-4 shadow z-20 bg-white flex justify-between">
         <h1 class="text-2xl">
-            <span class="text-gray">ChrisPerko</span><span class="text-gray-light font-thin">.NET</span>
+            <span class="text-gray">ChrisPerko</span>
+            <span class="text-gray-light font-thin">.NET</span>
         </h1>
         <p id="menu-link" class="cursor-pointer">menu</p>
     </header>
